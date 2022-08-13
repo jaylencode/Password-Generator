@@ -1,0 +1,87 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #1e272e;
+  color: #fff;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.password-container {
+  width: 400px;
+  background-image: linear-gradient(
+    109.6deg,
+    rgba(116, 18, 203, 1) 11.2%,
+    rgba(230, 46, 131, 1) 91.2%
+  );
+  box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
+
+.password-header {
+  padding: 1rem;
+}
+
+.password-body {
+  padding: 0 1rem 1rem;
+}
+
+.password {
+  background-color: #fafafa;
+  color: #ffaf40;
+  display: flex;
+  font-size: 1.5rem;
+  align-items: center;
+  height: 70px;
+  width: 100%;
+  position: relative;
+  padding: 1rem;
+  overflow: auto;
+}
+
+.password button {
+  background-color: #f618bf;
+  color: #fff;
+  border: none;
+  padding: 0.25rem;
+  cursor: pointer;
+  position: absolute;
+  font-family: inherit;
+  top: 0;
+  right: 0;
+  transform: translate(0, -80%);
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  opacity: 0;
+}
+
+.password:hover button {
+  opacity: 1;
+  transform: translate(0, 20%);
+}
+
+.form-control {
+color: #eee;
+  display: flex;
+  justify-content: space-between;
+  margin: 0.75rem 0;
+}
+
+.generate {
+  display: block;
+  background-image: radial-gradient(
+    circle farthest-corner at 10% 20%,
+    rgba(255, 209, 67, 1) 0%,
+    rgba(255, 145, 83, 1) 90%
+  );
+  color: #fff;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  width: 100%;
+  border: none;
+  font-weight: bold;
+  margin-top: 1rem;
+}
